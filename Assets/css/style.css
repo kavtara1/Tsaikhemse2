@@ -267,5 +267,7 @@ address {
 }
 
 .map {
+	
 	border-radius: 20px;
+	overflow: hidden;
 }
