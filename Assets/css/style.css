@@ -227,3 +227,45 @@ a,h1,h2,h3,address {
 	padding: 15px 27px 15px 27px;
 
 }
+
+/*footer starts here */
+
+.footer {
+	position: absolute;
+	/*bottom: 0;*/
+	left: 0;
+	right: 0;
+	background-color: #292C2F;
+	width: 100%;
+	height: 557px;
+
+}
+
+.footer_div_1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 370px;
+	padding-top: 50px;	
+	border-radius: 20px;
+
+}
+
+address {
+	background-color: #FFF;
+	border: 1px solid #FFF;
+	width: 1086px;
+	height: 60px;
+	border-radius: 20px;
+	text-align: center;
+	color: #F59A63;
+	/*padding:20px 362px 21px 294px;*/
+	font-size: 14px;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+
+.map {
+	border-radius: 20px;
+}
