@@ -164,23 +164,22 @@ a,h1,h2,h3,address {
 	border-top-left-radius:20px;
 	border-top-right-radius: 20px;
 	
+	
 }
 
 .menu::after {
 	content: '';
 	display: block;
 	display: 1084px;
-	height: 55px;
+	height: 65px;
 	background-color: #fff;
 	position: relative;
-	bottom: -55px;
+	bottom: -65px;
 	z-index: 5;
 	border-bottom-right-radius:20px;
 	border-bottom-left-radius: 20px;
 	
-
-
-
+	
 }
 
 
@@ -270,6 +269,7 @@ a,h1,h2,h3,address {
 	background-color: #292C2F;
 	width: 100%;
 	height: 557px;
+	margin-top: 20px;
 
 
 }
