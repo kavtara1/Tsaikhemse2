@@ -129,6 +129,7 @@ a,h1,h2,h3,address {
 }
 .hero_p {
 	width: 332px;
+	height: 38px;
 	color: #FFF;
 	font-size: 14px;
 	font-family: normal;
@@ -302,7 +303,7 @@ a,h1,h2,h3,address {
 	height: 370px;
 	padding-top: 50px;	
 	border-radius: 20px;
-	margin-top: 123px;
+	margin-top: 100px;
 
 }
 
@@ -337,8 +338,85 @@ address {
 }
 
 .map {
-
+	height: 290px;
 	border-radius: 20px;
 	overflow: hidden;
 }
 
+@media only screen and (max-width: 320px) {
+	body {
+		width: 320px;
+	}
+	.list-items {
+		display: none;
+	}
+
+	.logo {
+		padding-left: 15px;
+	}
+
+	.hero-h1 {
+		width: 263px;
+		height: 22px;
+		font-size:19px; 
+	}
+	.hero_p {
+		width: 246px;
+		height: 31px
+		font-size: 12px;
+	}
+	.hero {
+		width: 320px;
+	}
+	.hero_nav {
+		display: none;
+	}
+	.hero_image {
+		width: 320px
+		height:300px;
+	}
+	.footer::before {
+		content: none;
+	}
+	.hero::after {
+		content: none;
+	}
+
+	.hero_button {
+		border: 1px solid #FFF;
+		background-color: transparent;
+		color: #FFF;
+	}
+
+	.menu {
+		width: 320px;
+	}
+
+	.menu::before {
+		width: 320px;
+	}
+
+	.footer {
+		width: 320px;
+		height: 640px;
+
+	}
+	address {
+		width: 300px;
+		height: 60px;
+		padding: 14px 17px 14px 17px;
+		font-size: 12px;
+	}
+
+	.map {
+		width: 300px;
+		height: 290px;
+	}
+	.footer_div_2 {
+		display: flex;
+		flex-direction: column;
+		
+
+	}
+
+}
