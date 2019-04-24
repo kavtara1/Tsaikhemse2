@@ -413,9 +413,19 @@ address {
 		height: 290px;
 	}
 	.footer_div_2 {
+		width: 320px;
 		display: flex;
 		flex-direction: column;
 		
+
+	}
+	.card {
+		width: 100px;
+		height: 25px;
+	}
+	.academy-logo {
+		width: 135px;
+		height: 35px;
 
 	}
 
