@@ -97,10 +97,11 @@ a,h1,h2,h3,address {
 }
 
 .hero::after{
-	content: url(../images/one.png);
+	/*content: url(../images/basil.png);*/
 	position: absolute;
-	bottom: -150px;
-	right: 150px;
+	bottom: -450px;
+	left: 1250px;
+	z-index: 5;
 
 }
 
@@ -309,10 +310,15 @@ a,h1,h2,h3,address {
 
 .footer_div_2 {
 	display: flex;
-	justify-content: space-between;
-	width: 1084px;
+	/*justify-content: space-between;*/
+	width: 1086px;
 	margin-top: 30px;
 }
+
+
+
+
+
 .footer::before {
 	content: url('../images/two.png'); 
 	position: absolute;
@@ -321,6 +327,7 @@ a,h1,h2,h3,address {
 	z-index: -5;
 
 }
+
 
 address {
 	background-color: #FFF;
@@ -343,9 +350,18 @@ address {
 	overflow: hidden;
 }
 
+
+
+.icons {
+	width: 20px;
+	height: 20px;
+}
+.cons:hover {
+	color: red;
+}
 @media only screen and (max-width: 320px) {
 	body {
-		width: 320px;
+		width: 100%;
 	}
 	.list-items {
 		display: none;
@@ -356,23 +372,23 @@ address {
 	}
 
 	.hero-h1 {
-		width: 263px;
+		width: 85%;
 		height: 22px;
 		font-size:19px; 
 	}
 	.hero_p {
-		width: 246px;
+		width: 80%;
 		height: 31px
 		font-size: 12px;
 	}
 	.hero {
-		width: 320px;
+		width: 100%;
 	}
 	.hero_nav {
 		display: none;
 	}
 	.hero_image {
-		width: 320px
+		width: 100%x
 		height:300px;
 	}
 	.footer::before {
@@ -389,33 +405,35 @@ address {
 	}
 
 	.menu {
-		width: 320px;
+		width: calc(100vh-20px);
 	}
 
 	.menu::before {
-		width: 320px;
+		width: 100%;
 	}
 
 	.footer {
-		width: 320px;
+		width: 100%;
 		height: 640px;
 
 	}
 	address {
-		width: 300px;
+		width: 95%;
 		height: 60px;
 		padding: 14px 17px 14px 17px;
 		font-size: 12px;
 	}
 
 	.map {
-		width: 300px;
+		width: 95%;
 		height: 290px;
 	}
 	.footer_div_2 {
-		width: 320px;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		
 		
 
 	}
@@ -430,3 +448,86 @@ address {
 	}
 
 }
+
+@media only screen and (max-width: 480px) {
+
+	body {
+
+		width: 100%;
+}
+.list-items {
+		display: none;
+	}
+
+	.logo {
+		padding-left: 15px;
+	}
+
+	.hero-h1 {
+		width: 85%;
+		height: 22px;
+		font-size:19px; 
+	}
+	.hero_p {
+		width: 80%;
+		height: 31px
+		font-size: 12px;
+	}
+	.hero {
+		width: 100%;
+	}
+	.hero_nav {
+		display: none;
+	}
+	.hero_image {
+		width: 100%x
+		height:300px;
+	}
+	.footer::before {
+		content: none;
+	}
+	.hero::after {
+		content: none;
+	}
+
+	address {
+		width: 95%;
+		height: 60px;
+		padding: 14px 17px 14px 17px;
+		font-size: 12px;
+	}
+
+	.map {
+		width: 95%;
+		height: 290px;
+	}
+	.footer_div_2 {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+.hero_button {
+		border: 1px solid #FFF;
+		background-color: transparent;
+		color: #FFF;
+	}
+
+	.menu {
+		width: calc(100vh-20px);
+	}
+
+	.menu::before {
+		width: 100%;
+	}
+
+	.footer {
+		width: 100%;
+		height: 640px;
+
+	}
+
+}
+
