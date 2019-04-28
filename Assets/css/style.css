@@ -388,7 +388,7 @@ address {
 		display: none;
 	}
 	.hero_image {
-		width: 100%x
+		width: 100%;
 		height:300px;
 	}
 	.footer::before {
