@@ -413,7 +413,7 @@ address {
 	.hero::after {
 		content: none;
 	}
-
+/*burger menu*/
 
 	.burger {
 		display: block;
@@ -553,6 +553,48 @@ address {
 	.hero::after {
 		content: none;
 	}
+
+	/*burger menu*/
+	.burger {
+		display: block;
+			}
+	.burger_item1,.burger_item2,.burger_item3  {
+		display: block;
+		width: 20px;
+		height: 3px;
+		background-color:#181818;
+		border-radius: 5px;
+		transition: 0.3s ease;
+		margin-right: 15px
+		}
+
+
+		.change #menu {
+	background-color: gray;
+
+}
+#bar1 {
+	transform: translateY(-5px);
+}
+#bar3 {
+	transform: translateY(5px);
+}
+
+
+.change #bar1{
+	transform: translateY(10px);
+	transform: rotateZ(-45deg);
+	
+	}
+
+.change #bar3 {
+	transform: :translateY(-10px);
+	transform: rotate(45deg);
+	
+}
+.change #bar2 {
+	opacity: 0;
+}
 
 	address {
 		width: 95%;
