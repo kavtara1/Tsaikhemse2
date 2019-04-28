@@ -74,7 +74,6 @@ a,h1,h2,h3,address {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	overflow: hidden;
 	height: calc(100vh - 60px);
 
 		
@@ -108,6 +107,8 @@ a,h1,h2,h3,address {
 .hero-h1 {
 	font-size: 50px;
 	color:#FFF;
+
+
 
 }
 .hero_button {
@@ -383,6 +384,7 @@ address {
 	}
 	.hero {
 		width: 100%;
+		height: calc(100vh - 20px);
 	}
 	.hero_nav {
 		display: none;
