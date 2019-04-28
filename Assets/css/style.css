@@ -74,6 +74,7 @@ a,h1,h2,h3,address {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 	height: calc(100vh - 60px);
 
 		
@@ -107,8 +108,6 @@ a,h1,h2,h3,address {
 .hero-h1 {
 	font-size: 50px;
 	color:#FFF;
-
-
 
 }
 .hero_button {
@@ -219,6 +218,10 @@ a,h1,h2,h3,address {
 
 
 	}
+	.menu_images {
+		height: 232px;
+		width: 225px
+	}
 
 .menu-list li {
 	width: 308px;
@@ -309,11 +312,12 @@ a,h1,h2,h3,address {
 
 }
 
-.footer_div_2 {
+.footer_icons {
 	display: flex;
-	/*justify-content: space-between;*/
 	width: 1086px;
 	margin-top: 30px;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 
@@ -349,16 +353,25 @@ address {
 	height: 290px;
 	border-radius: 20px;
 	overflow: hidden;
+	fill: #FFF;
 }
 
 
 
 .icons {
-	width: 20px;
-	height: 20px;
+	/*width: 20px;
+	height: 20px;*/
+	fill: #FFF;
 }
-.cons:hover {
-	color: red;
+.icons:hover {
+	fill: #badc58;
+}
+.socials {
+	width: 20px;
+	/*display: flex;*/
+
+
+	
 }
 @media only screen and (max-width: 320px) {
 	body {
@@ -384,14 +397,14 @@ address {
 	}
 	.hero {
 		width: 100%;
-		height: calc(100vh - 20px);
+		height: 300px;
 	}
 	.hero_nav {
 		display: none;
 	}
 	.hero_image {
 		width: 100%;
-		height: calc(100vh - 20px);
+		height:300px;
 	}
 	.footer::before {
 		content: none;
@@ -407,11 +420,14 @@ address {
 	}
 
 	.menu {
-		width: calc(100vh-20px);
+		width: calc(100vw-20px);
 	}
 
 	.menu::before {
-		width: 100%;
+		width: calc(100vw-20px);
+		position: absolute;
+		top: 350px;
+		
 	}
 
 	.footer {
@@ -430,7 +446,7 @@ address {
 		width: 95%;
 		height: 290px;
 	}
-	.footer_div_2 {
+	.footer_icons {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -439,6 +455,7 @@ address {
 		
 
 	}
+
 	.card {
 		width: 100px;
 		height: 25px;
@@ -450,6 +467,8 @@ address {
 	}
 
 }
+
+
 
 @media only screen and (max-width: 480px) {
 
@@ -477,12 +496,13 @@ address {
 	}
 	.hero {
 		width: 100%;
+		height: 300px;
 	}
 	.hero_nav {
 		display: none;
 	}
 	.hero_image {
-		width: 100%x
+		width: 100%;
 		height:300px;
 	}
 	.footer::before {
@@ -503,7 +523,7 @@ address {
 		width: 95%;
 		height: 290px;
 	}
-	.footer_div_2 {
+	.footer_icons {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -518,11 +538,16 @@ address {
 	}
 
 	.menu {
-		width: calc(100vh-20px);
+		width: calc(100vw-20px);
 	}
 
 	.menu::before {
 		width: 100%;
+		width: calc(100vw-20px);
+		position: absolute;
+		bottom: 307px;
+		height: 10px;
+
 	}
 
 	.footer {
