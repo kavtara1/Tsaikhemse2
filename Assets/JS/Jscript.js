@@ -5,3 +5,7 @@ e.id = "onclick-button";
 document.getElementById("onclick-button").text = "დამატებულია";
 }
 
+function onClickMenu(){
+	document.getElementById("menu").classList.toggle("change");
+
+}
