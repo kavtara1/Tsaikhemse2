@@ -413,6 +413,15 @@ address {
 		content: none;
 	}
 
+	.burger {
+		display: block;
+		background-color: black;
+		position: absolute;
+		left: 15px;
+		border: 1px solid black;
+		width: 15px;
+	}
+
 	.hero_button {
 		border: 1px solid #FFF;
 		background-color: transparent;
@@ -426,7 +435,7 @@ address {
 	.menu::before {
 		width: calc(100vw-20px);
 		position: absolute;
-		top: 350px;
+		bottom: 0;
 		
 	}
 
@@ -451,8 +460,7 @@ address {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		
-		
+			
 
 	}
 
@@ -545,7 +553,7 @@ address {
 		width: 100%;
 		width: calc(100vw-20px);
 		position: absolute;
-		bottom: 307px;
+		bottom: 0;
 		height: 10px;
 
 	}
