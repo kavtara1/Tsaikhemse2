@@ -418,7 +418,7 @@ address {
 	.burger {
 		display: block;
 			}
-	.burger_item1,.burger_item2,.burger_item3  {
+	.burger_item  {
 		display: block;
 		width: 20px;
 		height: 3px;
@@ -434,22 +434,22 @@ address {
 
 }
 #bar1 {
-	transform: translateY(-5px);
+	transform: translateY(-3px);
 }
 #bar3 {
-	transform: translateY(5px);
+	transform: translateY(3px);
 }
 
 
 .change #bar1{
-	transform: translateY(10px);
-	transform: rotateZ(-45deg);
+	 
+	transform: translateY(3px) rotateZ(-45deg);
 	
 	}
 
 .change #bar3 {
-	transform: :translateY(-10px);
-	transform: rotate(45deg);
+	
+	transform: translateY(-3px)  rotate(45deg);
 	
 }
 .change #bar2 {
@@ -467,10 +467,18 @@ address {
 	}
 
 	.menu::before {
-		width: calc(100vw-20px);
-		position: absolute;
-		bottom: 0;
+		width: 320px;
+		position: relative;
+		bottom: 10px;
+		height: 10px;
 		
+	}
+
+	.menu::after {
+		height: 10px;
+		position: relative;
+		top:30px;
+		z-index: 5;
 	}
 
 	.footer {
@@ -555,10 +563,10 @@ address {
 	}
 
 	/*burger menu*/
-	.burger {
+	/*.burger {
 		display: block;
 			}
-	.burger_item1,.burger_item2,.burger_item3  {
+	.burger_item  {
 		display: block;
 		width: 20px;
 		height: 3px;
@@ -574,28 +582,56 @@ address {
 
 }
 #bar1 {
-	transform: translateY(-5px);
+	transform: translateY(-3px);
 }
 #bar3 {
-	transform: translateY(5px);
+	transform: translateY(3px);
 }
 
 
 .change #bar1{
-	transform: translateY(10px);
-	transform: rotateZ(-45deg);
+	 
+	transform: translateY(1px) rotateZ(-45deg);
 	
 	}
 
 .change #bar3 {
-	transform: :translateY(-10px);
-	transform: rotate(45deg);
+	
+	transform: translateY(-1px)  rotate(45deg);
+	
 	
 }
 .change #bar2 {
 	opacity: 0;
 }
+.menu-bg {
+	width: 0;
+	height:0;
+	background-color: black;
+}
+.change-bg{
+	width: 100%;
+	height: calc(100vh-20px);
 
+}*/
+/*
+.nav {
+	display: none;
+}
+
+.nav li a {
+	color: #181818;
+	text-decoration: none;
+
+
+}
+
+.nav li {
+	list-style-type: none;
+}*/
+.change {
+	display: block;
+}
 	address {
 		width: 95%;
 		height: 60px;
@@ -625,14 +661,14 @@ address {
 		width: calc(100vw-20px);
 	}
 
-	.menu::before {
+	/*.menu::before {
 		width: 100%;
 		width: calc(100vw-20px);
 		position: absolute;
 		bottom: 0;
 		height: 10px;
 
-	}
+	}*/
 
 	.footer {
 		width: 100%;
