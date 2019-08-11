@@ -1,13 +1,33 @@
-function changeid ()
-{
-var e = document.getElementById("a1");
-e.id = "onclick-button";
-document.getElementById("onclick-button").text = "დამატებულია";
-}
 
-function onClickMenu(){
-	document.getElementById("menu").classList.toggle("change");
-	//document.getElementById("nav").classList.toggle("change");
-	//document.getElementById("menu-bg").classList.toggle("change");
+function scrollWin(){
+	window.scrollTo(0,900);
+};
 
-}
+
+
+$(document).ready(function(){
+      $('.menu-list_buttons').on('click', function(){
+            $(this).removeClass("menu-list_buttons")
+            $(this).addClass("onclick-button")
+            $(this).text("დამატებულია");
+      });
+
+
+
+
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 100                       // Scroll to top of body
+    }, 250);
+
+});
+
+});

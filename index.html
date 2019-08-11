@@ -1,110 +1,116 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>წაიხემსე</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
-	<script language="javascript" type="text/javascript" src="Assets/JS/Jscript.js"></script>
+    <meta charset="utf-8">
+    <title>წაიხემსე</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 </head>
-<body>
-	<header>
-		<img class="logo" src="Assets\images\logo.svg">
-		<nav>
-			<ul class="list-items">
-				<li><a class="nav-buttons" href="#">პროდუქცია</a></li>
-				<li><a class="nav-buttons" href="#">კონტაქტი</a></li>
-			</ul>
-		</nav>
-		<div class="burger" id="menu" onclick="onClickMenu()">
-			<span class="burger_item" id="bar1"></span> 
-			<span  class="burger_item" id="bar2"></span>
-			<span  class="burger_item" id="bar3"></span>
 
-			<!-- <ul  class="nav" id="nav">
+<body>
+    <header>
+        <img class="logo" src="Assets\images\logo.svg">
+        <nav>
+            <ul class="list-items">
+                <li><a class="nav-buttons" href="#foodManu">პროდუქცია</a></li>
+                <li><a class="nav-buttons" href="#footer">კონტაქტი</a></li>
+            </ul>
+        </nav>
+        <div class="burger" id="menu" onclick="onClickMenu()">
+            <span class="burger_item" id="bar1"></span>
+            <span class="burger_item" id="bar2"></span>
+            <span class="burger_item" id="bar3"></span>
+
+            <!-- <ul  class="nav" id="nav">
 				<li><a href="#">მთავარი</a></li>
 				<li><a href="#">პროდუქცია</a></li>
 				<li><a href="#">კონტაქტი</a></li>
 			</ul> -->
 
-		</div>
+        </div>
 
 
-	</header>
-		<div  class="hero">
-		<section class="hero_content">
-			<h1 class="hero-h1">იტალიური სამზარეულო</h1>
-			<p class="hero_p">გოლდი სვეტებს....და კიდე რაღაც რანმობ ტექსტი რომლის დაკოპირებაც დამეზარა,ტექსტი </p>
-			<a href="#" class="hero_button">ვრცლად</a>
-			<img class="hero_image" src="Assets\images\main_pic.png">
-		</section>
-		<a class="hero_nav" href="#">დაუყევი საიტს</a>
-				</div>
-	<section class="menu">
-		<h2 class="menu-h2">იტალიური პასტა</h2>
-		<ul class="menu-list">
-			<li>
-				<img class="menu_images" src="Assets\images\1.png">
-				<h3>სპაგეტი ალა მატრიჩიანა</h3>
-				<p>ტომატი, ხახვი, პარმეზანი</p>
-				<a id="a1" onclick="changeid()" href="#!">დამატება</a>
-			</li>
-			<li>
-				<img class="menu_images" src="Assets\images\2.png">
-				<h3>სპაგეტი ალა მატრიჩიანა</h3>
-				<p>ტომატი, ხახვი, პარმეზანი</p>
-				<a  href="#!">დამატება</a>
-			</li>
-			<li>
-				<img class="menu_images" src="Assets\images\3.png">
-				<h3>სპაგეტი ალა მატრიჩიანა</h3>
-				<p>ტომატი, ხახვი, პარმეზანი</p>
-				<a  href="#!">დამატება</a>
-			</li>
-			<li>
-				<img class="menu_images" src="Assets\images\4.png">
-				<h3>სპაგეტი ალა მატრიჩიანა</h3>
-				<p>ტომატი, ხახვი, პარმეზანი</p>
-				<a  href="#!">დამატება</a>
-			</li>
-			<li>
-				<img class="menu_images" src="Assets\images\5.png">
-				<h3>სპაგეტი ალა მატრიჩიანა</h3>
-				<p>ტომატი, ხახვი, პარმეზანი</p>
-				<a  href="#!">დამატება</a>
-			</li>
-			<li>
-				<img class="menu_images" src="Assets\images\6.png">
-				<h3>სპაგეტი ალა მატრიჩიანა</h3>
-				<p>ტომატი, ხახვი, პარმეზანი</p>
-				<a href="#!">დამატება</a>
-			</li>														
-		</ul>
-	</section>
-	
-			
-		<footer>
-			<div class="footer_div_1">
-			
-		<address>
+    </header>
+    <div class="hero">
+        <section class="hero_content">
+            <h1 class="hero-h1">იტალიური სამზარეულო</h1>
+            <p class="hero_p">გოლდი სვეტებს....და კიდე რაღაც რანმობ ტექსტი რომლის დაკოპირებაც დამეზარა,ტექსტი </p>
+            <a href="#" id="more" onclick="scrollWin()" class="hero_button">ვრცლად</a>
+            <img class="hero_image" src="Assets\images\main_pic.png">
+        </section>
+        <a class="hero_nav" onclick="scrollWin()" href="#">დაუყევი საიტს</a>
+    </div>
+    <section class="menu" id="foodManu">
+        <h2 class="menu-h2">იტალიური პასტა</h2>
+        <ul class="menu-list">
+            <li>
+                <img class="menu_images" src="Assets\images\1.png">
+                <h3>სპაგეტი ალა მატრიჩიანა</h3>
+                <p>ტომატი, ხახვი, პარმეზანი</p>
+                <a class="menu-list_buttons" href="#!">დამატება</a>
+            </li>
+            <li>
+                <img class="menu_images" src="Assets\images\2.png">
+                <h3>სპაგეტი ალა მატრიჩიანა</h3>
+                <p>ტომატი, ხახვი, პარმეზანი</p>
+                <a href="#!" class="menu-list_buttons">დამატება</a>
+            </li>
+            <li>
+                <img class="menu_images" src="Assets\images\3.png">
+                <h3>სპაგეტი ალა მატრიჩიანა</h3>
+                <p>ტომატი, ხახვი, პარმეზანი</p>
+                <a href="#!" class="menu-list_buttons">დამატება</a>
+            </li>
+            <li>
+                <img class="menu_images" src="Assets\images\4.png">
+                <h3>სპაგეტი ალა მატრიჩიანა</h3>
+                <p>ტომატი, ხახვი, პარმეზანი</p>
+                <a href="#!" class="menu-list_buttons">დამატება</a>
+            </li>
+            <li>
+                <img class="menu_images" src="Assets\images\5.png">
+                <h3>სპაგეტი ალა მატრიჩიანა</h3>
+                <p>ტომატი, ხახვი, პარმეზანი</p>
+                <a href="#!" class="menu-list_buttons">დამატება</a>
+            </li>
+            <li>
+                <img class="menu_images" src="Assets\images\6.png">
+                <h3>სპაგეტი ალა მატრიჩიანა</h3>
+                <p>ტომატი, ხახვი, პარმეზანი</p>
+                <a href="#!" class="menu-list_buttons">დამატება</a>
+
+            </li>
+        </ul>
+           </section>
+           
+
+
+    <footer id="footer">
+        <div class="footer_div_1">
+
+            <address>
 			მიცკევიჩის 7ა, პირველი სადარბაზო (+995) 566 111 333
 		</address>
-		
 
-		<div class="map">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.042350065777!2d44.777403465750936!3d41.71960498329618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d65e29f14b%3A0x5314c1881de74fd5!2z4YOh4YOQ4YOR4YOj4YOg4YOX4YOQ4YOa4YOdLCDhg5fhg5Hhg5jhg5rhg5jhg6Hhg5g!5e0!3m2!1ska!2sge!4v1550580551130" width="1084" height="290" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-		
-		
-		</div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.042350065777!2d44.777403465750936!3d41.71960498329618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d65e29f14b%3A0x5314c1881de74fd5!2z4YOh4YOQ4YOR4YOj4YOg4YOX4YOQ4YOa4YOdLCDhg5fhg5Hhg5jhg5rhg5jhg6Hhg5g!5e0!3m2!1ska!2sge!4v1550580551130"
+                    width="1084" height="290" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-		
-		
-				<div class="footer_icons">
-					<a href="facebook.com"> <img class="academy-logo" src="Assets/images/academy-logo.svg"></a>
-				
-				<span class="socials" > <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+
+
+            </div>
+
+
+
+            <div class="footer_icons">
+                <a href="facebook.com"> <img class="academy-logo" src="Assets/images/academy-logo.svg"></a>
+
+                <span class="socials"> <a href="https://www.facebook.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
   
   <g id="facebook" transform="translate(-23.127)">
     <path id="Path_82" data-name="Path 82" class="icons" d="M33.513,3.32H31.631c-1.476,0-1.762.7-1.762,1.731v2.27h3.52v3.555H29.869V20H26.2V10.877h-3.07V7.321H26.2V4.7C26.2,1.657,28.056,0,30.77,0l2.744,0V3.32Z"/>
@@ -130,14 +136,15 @@
   </g>
 </svg></a>
 			 	</span>
-			
-			
-			
-			<img class="card" src="Assets/images/card.svg">
-			</div>
-			
-		</footer>
-	
 
+
+
+                <img class="card" src="Assets/images/card.svg">
+            </div>
+
+    </footer>
+
+<script language="javascript" type="text/javascript" src="Assets/JS/Jscript.js"></script>
 </body>
+
 </html>

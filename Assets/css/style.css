@@ -5,6 +5,10 @@
 	list-style:none;
 		
 	}
+
+html {
+	scroll-behavior: smooth;
+}	
 @font-face {
 	font-family: caps;
 	src: url(../fonts/caps.ttf);
@@ -243,7 +247,7 @@ a,h1,h2,h3,address {
   box-shadow: 0 3px 6px 0 rgba(24, 24, 24, 0.06);
   background-color: #ffffff;
 }
-.menu-list a {
+.menu-list_buttons {
 	background-color: #FFF;
 	border: 1px solid #badc58;
 	color: #badc58;
@@ -256,7 +260,7 @@ a,h1,h2,h3,address {
 	align-items: center;
 	justify-content: center;
 }
-.menu-list a:hover {
+.menu-list_buttons:hover {
 	color: #181818;
 	border: 1px solid #badc58;
 	background-color: #badc58;
@@ -281,13 +285,18 @@ a,h1,h2,h3,address {
 	padding-bottom: 21px;
 }
 
-#onclick-button {
+.onclick-button {
 	border:1px solid #ecf0f1;
 	background-color: #ecf0f1;
 	color: #bdc3c7;
 	padding: 15px 27px 15px 27px;
+	border-radius: 10px;
 
 }
+
+
+
+
 
 /*footer starts here */
 
