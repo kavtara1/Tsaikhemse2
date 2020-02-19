@@ -43,7 +43,6 @@ header {
 	height: 60px;
 	align-items: center;
 
-	/*border: 1px solid black;*/
 }
 .burger {
 display: none;	
@@ -66,12 +65,7 @@ a,h1,h2,h3,address {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	
-
-	
 }
-
 
 .hero {
 	
@@ -81,8 +75,6 @@ a,h1,h2,h3,address {
 	justify-content: center;
 	overflow: hidden;
 	height: calc(100vh - 60px);
-
-		
 	
 }
 .hero::before {
@@ -102,7 +94,6 @@ a,h1,h2,h3,address {
 }
 
 .hero::after{
-	/*content: url(../images/basil.png);*/
 	position: absolute;
 	bottom: -450px;
 	left: 1250px;
@@ -329,9 +320,6 @@ a,h1,h2,h3,address {
 
 
 
-
-/*footer starts here */
-
 footer {
 	position: relative;
     height: 550px;
@@ -381,10 +369,6 @@ footer::after {
 	align-items: center;
 }
 
-
-
-
-
 .footer::before {
 	content: url('../images/two.png'); 
 	position: absolute;
@@ -421,8 +405,6 @@ address {
 
 
 .icons {
-	/*width: 20px;
-	height: 20px;*/
 	fill: #FFF;
 }
 .icons:hover {
@@ -430,7 +412,6 @@ address {
 }
 .socials {
 	width: 20px;
-	/*display: flex;*/
 	
 }
 
