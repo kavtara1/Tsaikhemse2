@@ -26,11 +26,8 @@ body {
 	margin: 0 auto;
 	overflow-x: hidden;
 }
-header, 
-ul {
+header, ul {
  display: flex;
-
-
 
 }
 .list-items {
@@ -88,8 +85,6 @@ a,h1,h2,h3,address {
 	background-color: #181818;
 	opacity: 0.6;
 	z-index: -1;
-
-
 
 }
 
@@ -160,7 +155,6 @@ a,h1,h2,h3,address {
 	position: relative;
 	top: 22px;
 	left: 60px;
-
 
 }
 .scroll-down-button {

@@ -3,19 +3,12 @@ function scrollWin(){
 	window.scrollTo(0,900);
 };
 
-
-
 $(document).ready(function(){
       $('.menu-list_buttons').on('click', function(){
             $(this).removeClass("menu-list_buttons")
             $(this).addClass("onclick-button")
             $(this).text("დამატებულია");
       });
-
-
-
-
-// ===== Scroll to Top ==== 
 
 
     $(window).scroll(function(){ 
